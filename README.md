@@ -5,7 +5,13 @@ The qubit is the fundamental building block of a quantum computer, it is a two-l
 
 We start from the behaviour of an isolated qubit, oscillating in a sinusoidal fashion between its excited and ground. Random decays are introduced probabilistically for every timestep, yielding the quantum trajectory of one qubit. We then average many of these trajectories to obtain the behaviour of the system and compare it to the analytical solution of the optical Bloch equations.
 
-The results of the simulation are obtained in the QubitDynamics.py script, and yeald results with residuals of less than 1%.
+![Alt text](Picture1.png)
+
+Prob(1), at the top, is the probablity of one qubit to be in state |1⟩, when it is affected by random decays.
+The middle plot is the collective behaviour of many qubits, and it compares the simulation with the theoretical prediction (which is still an approximation).
+The bottom plot shows the residuals for the middle plot.
+
+The results of the simulation are obtained in the QubitDynamics.py script, and yield results with residuals of less than 1%.
 
 
 ## Quantum Error Correction
