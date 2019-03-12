@@ -270,14 +270,14 @@ for p in np.linspace(0.0, 0.2, num = x_steps): #y vals for corrected 9 qubit
 
 	Fid9 = AvgFid(EncState, n_qubits, p)
 	y_vals_9_qb = np.append(y_vals_9_qb, np.array([Fid9]))
-	print 'first', p
+	print( 'first', p)
 
 
 for p in np.linspace(0.0, 0.2, num = x_steps): #y vals for uncorrected 9 qubit
 
 	FidUncorr9 = AvgFidUncorr9(EncState, n_qubits, p)
 	y_vals_uncorr9 = np.append(y_vals_uncorr9, np.array([FidUncorr9]))
-	print 'second', p
+	print( 'second', p)
 
 
 for p in np.linspace(0.0, 0.2, num = x_steps): #y vals for uncerrected 1 qubit in either 0 or 1 (bit and phase)
@@ -285,7 +285,7 @@ for p in np.linspace(0.0, 0.2, num = x_steps): #y vals for uncerrected 1 qubit i
 	StateIn = random.choice(state1)
 	FidUncorr1 = AvgFidUncorr1Both(StateIn, n_qubits, p)
 	y_vals_uncorr1 = np.append(y_vals_uncorr1, np.array([FidUncorr1]))
-	print 'third', p
+	print( 'third', p)
 
 
 
@@ -308,7 +308,7 @@ pyplot.savefig('9qubit_plot_10000.jpg', dpi = 400)
 
 for i in range(len(y_vals_9_qb)): #print intersect between encoded and unencoded
 	if abs(y_vals_9_qb[i] -  y_vals_uncorr1[i]) < 0.005:
-		print x_vals[i]
+		print (x_vals[i])
 
 
 

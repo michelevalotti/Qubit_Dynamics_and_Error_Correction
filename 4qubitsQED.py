@@ -173,7 +173,7 @@ for p in np.linspace(0.0, 0.5, num = x_steps): #y vals for 4 qubit code
 
 	Fid9 = AvgFid(EncState, n_qubits, p)
 	y_vals_4_qb = np.append(y_vals_4_qb, np.array([Fid9]))
-	print 'first', p #check progress
+	print('first', p) #check progress
 
 
 for p in np.linspace(0.0, 0.5, num = x_steps): #y vals for uncerrected 1 qubit in either 0 or 1 (bit and phase)
@@ -181,7 +181,7 @@ for p in np.linspace(0.0, 0.5, num = x_steps): #y vals for uncerrected 1 qubit i
 	StateIn = random.choice(state1)
 	FidUncorr1 = AvgFidUncorr1Both(StateIn, n_qubits, p)
 	y_vals_uncorr1 = np.append(y_vals_uncorr1, np.array([FidUncorr1]))
-	print 'second', p # check progress
+	print('second', p) # check progress
 
 
 '''plot all of the things'''

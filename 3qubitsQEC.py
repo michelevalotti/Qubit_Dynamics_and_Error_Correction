@@ -122,7 +122,7 @@ for p in np.linspace(0.0, 0.9, num = x_steps):
 
 	fidelity_3 = AvgFid(EncState, n_qubits, p)
 	y_vals_3_qb = np.append(y_vals_3_qb, np.array([fidelity_3]))
-	print p
+	print(p)
 
 
 y_th_3 = np.sqrt(1 - 3*(x_vals)**2 + 2*(x_vals)**3) # teoretical fidelity for 3 qubits
